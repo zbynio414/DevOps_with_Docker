@@ -3,14 +3,16 @@ Part 1
 Part 1 ex 1.4
 
 (base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ sudo docker run -d -it --name ubuntu ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
 [sudo] password for zbigniew: 
 cbe64a7e84993b161e7062d54e31880d21ecd10cd5574f9de9e8cd6ed4f431cf
 
 (base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ sudo docker exec -it ubuntu bash
+
 [sudo] password for zbigniew: 
-root@cbe64a7e8499:/# atp-get update
-bash: atp-get: command not found
+
 root@cbe64a7e8499:/# apt-get update
+
 Get:1 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
 Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]           
 Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]             
@@ -31,7 +33,9 @@ Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [49.
 Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [22.5 kB]               
 Fetched 26.3 MB in 7s (3906 kB/s)                                                                       
 Reading package lists... Done
+
 root@cbe64a7e8499:/# apt-get install curl
+
 Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
@@ -140,7 +144,9 @@ Updating certificates in /etc/ssl/certs...
 0 added, 0 removed; done.
 Running hooks in /etc/ca-certificates/update.d...
 done.
+
 root@cbe64a7e8499:/# curl helsinki.fi
+
 <html>
 <head><title>301 Moved Permanently</title></head>
 <body>
@@ -150,11 +156,17 @@ root@cbe64a7e8499:/# curl helsinki.fi
 </html>
 root@cbe64a7e8499:/# ^C
 root@cbe64a7e8499:/# read escape sequence
+
 (base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ sudo docker exec -it ubuntu bash
+
 root@cbe64a7e8499:/# sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
 Input website:
+
 helsinki.fi
+
 Searching..
+
 <html>
 <head><title>301 Moved Permanently</title></head>
 <body>
@@ -162,6 +174,7 @@ Searching..
 <hr><center>nginx/1.20.1</center>
 </body>
 </html>
+
 Input website:
 ^C
 root@cbe64a7e8499:/# 
