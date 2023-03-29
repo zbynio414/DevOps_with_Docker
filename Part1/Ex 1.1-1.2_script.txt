@@ -1,0 +1,61 @@
+Script started on 2023-03-27 09:39:35+02:00 [TERM="xterm-256color" TTY="/dev/pts/14" COLUMNS="105" LINES="62"]
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker run nginx-nginxdnginx nginx
+[?2004l[sudo] password for zbigniew: 
+4cd0d4852be71e3640d4700591c4419f0a2d5fae5d1a59ef7620e74c366502b9
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker run -d nginx
+[?2004lcdc3bba022f6c2261e11640869c96741c0520a1df885bde9eeba7e4b8c37fee5
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker run -d nginx
+[?2004l5492e4092252696958c98be087e5d1c1f64528b4d8730920a15e0bfd1f9f66b4
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+5492e4092252   nginx     "/docker-entrypoint.…"   29 seconds ago   Up 28 seconds               80/tcp    focused_easley
+cdc3bba022f6   nginx     "/docker-entrypoint.…"   33 seconds ago   Up 32 seconds               80/tcp    charming_carson
+4cd0d4852be7   nginx     "/docker-entrypoint.…"   37 seconds ago   Up 36 seconds               80/tcp    happy_cerf
+a1a3bb3f4d7a   nginx     "/docker-entrypoint.…"   14 minutes ago   Exited (0) 13 minutes ago             vibrant_zhukovsky
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker rm a1
+[?2004la1
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker rm a1ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS     NAMES
+5492e4092252   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute   80/tcp    focused_easley
+cdc3bba022f6   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute   80/tcp    charming_carson
+4cd0d4852be7   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute   80/tcp    happy_cerf
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo co[K[Kdockee[Kr stop 54
+[?2004l54
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker stop 54[K[Kcd
+[?2004lcd
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker stop cd54[2Pps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                      PORTS     NAMES
+5492e4092252   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 13 seconds ago             focused_easley
+cdc3bba022f6   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 4 seconds ago              charming_carson
+4cd0d4852be7   nginx     "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes                80/tcp    happy_cerf
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker rm 54 cd
+[?2004l54
+cd
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo c[Kdocker images
+[?2004lREPOSITORY   TAG       IMAGE ID       CREATED      SIZE
+nginx        latest    ac232364af84   3 days ago   142MB
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ siu[K[Kudo docker rmi nginx
+[?2004lError response from daemon: conflict: unable to remove repository reference "nginx" (must force) - container 4cd0d4852be7 is using its referenced image ac232364af84
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker stop 4c
+[?2004l4c
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker stop 4crmi nginx[3Pimagesrm 54 cd[K[K[K[K[K4c
+[?2004l4c
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker rm 4c[2@stop[C[C[Crmi nginx
+[?2004lUntagged: nginx:latest
+Untagged: nginx@sha256:f4e3b6489888647ce1834b601c6c06b9f8c03dee6e097e13ed3e28c01ea3ac8c
+Deleted: sha256:ac232364af842735579e922641ae2f67d5b8ea97df33a207c5ea05f60c63a92d
+Deleted: sha256:31888883f307f2ea78ac1dd1abd26ddae38ebe9aacfbb0250995a636b8531d8f
+Deleted: sha256:d413a106f5d462ce56547539d6e8a6402a38631e8312690144be16c2101dda74
+Deleted: sha256:64ee442aa082c659c502136dbcc60998aa970f569ff26b0098d4e7c463623660
+Deleted: sha256:a7a27d87cf3ba004765cbb692a4584256dcd1eb7aff0049f8e1d4d45a3e50e4d
+Deleted: sha256:cc6b5ded0d53019de2911c55226548c7707a29af8cd6a90eb51a437255aa0b42
+Deleted: sha256:3af14c9a24c941c626553628cf1942dcd94d40729777f2fcfbcd3b8a3dfccdd6
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker rmi nginx[4P 4c[2@stop[C[C[Crmi nginx[3Pimagesrm 54 cd[2Pimagesrmi nginx[2Pstop 4c[2Prm[C[C[Ci nginx[Ksudo docker rmi nginx[K[K[K[K[K[K[K[K[Kps =[K-a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ sudo docker ps -a[K[K[K[K[Kimages
+[?2004lREPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker[00m$ exit
+[?2004lexit
+
+Script done on 2023-03-27 09:57:12+02:00 [COMMAND_EXIT_CODE="130"]

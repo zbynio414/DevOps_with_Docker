@@ -1,0 +1,40 @@
+Part 1
+
+Part 1 ex 1
+
+(base) zbigniew@zbigniew:~/DevOps_with_Docker$ sudo docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                      PORTS     NAMES
+5492e4092252   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 13 seconds ago             focused_easley
+cdc3bba022f6   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 4 seconds ago              charming_carson
+4cd0d4852be7   nginx     "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes                80/tcp    happy_cerf
+
+Part 1 ex 2
+
+(base) zbigniew@zbigniew:~/DevOps_with_Docker$ sudo docker rm 54 cd
+54
+cd
+(base) zbigniew@zbigniew:~/DevOps_with_Docker$ sudo docker images
+REPOSITORY   TAG       IMAGE ID       CREATED      SIZE
+nginx        latest    ac232364af84   3 days ago   142MB
+(base) zbigniew@zbigniew:~/DevOps_with_Docker$ sudo docker rmi nginx
+Error response from daemon: conflict: unable to remove repository reference "nginx" (must force) - container 4cd0d4852be7 is using its referenced image ac232364af84
+(base) zbigniew@zbigniew:~/DevOps_with_Docker$ sudo docker stop 4c
+4c
+(base) zbigniew@zbigniew:~/DevOps_with_Docker$ sudo docker rm 4c
+4c
+(base) zbigniew@zbigniew:~/DevOps_with_Docker$ sudo docker rmi nginx
+Untagged: nginx:latest
+Untagged: nginx@sha256:f4e3b6489888647ce1834b601c6c06b9f8c03dee6e097e13ed3e28c01ea3ac8c
+Deleted: sha256:ac232364af842735579e922641ae2f67d5b8ea97df33a207c5ea05f60c63a92d
+Deleted: sha256:31888883f307f2ea78ac1dd1abd26ddae38ebe9aacfbb0250995a636b8531d8f
+Deleted: sha256:d413a106f5d462ce56547539d6e8a6402a38631e8312690144be16c2101dda74
+Deleted: sha256:64ee442aa082c659c502136dbcc60998aa970f569ff26b0098d4e7c463623660
+Deleted: sha256:a7a27d87cf3ba004765cbb692a4584256dcd1eb7aff0049f8e1d4d45a3e50e4d
+Deleted: sha256:cc6b5ded0d53019de2911c55226548c7707a29af8cd6a90eb51a437255aa0b42
+Deleted: sha256:3af14c9a24c941c626553628cf1942dcd94d40729777f2fcfbcd3b8a3dfccdd6
+(base) zbigniew@zbigniew:~/DevOps_with_Docker$ sudo docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+(base) zbigniew@zbigniew:~/DevOps_with_Docker$ sudo docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+(base) zbigniew@zbigniew:~/DevOps_with_Docker$
+

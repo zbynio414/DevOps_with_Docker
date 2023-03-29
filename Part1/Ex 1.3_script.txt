@@ -1,0 +1,163 @@
+Script started on 2023-03-27 11:05:37+02:00 [TERM="xterm-256color" TTY="/dev/pts/17" COLUMNS="105" LINES="60"]
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ sudo decker run [1@o[1P[C[C[C[C[C[C[C[C[C [C- d [C - i t [C - - n a m , e [1P [1P [1P e [1P m e [C s i m p l e [C [7mdevopsdockeruh/[27m[7ms[27m[7mimple-web-service:ubuntu[27m [A(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdevopsdockeruh/simple-web-service:ubuntu
+[?2004l[sudo] password for zbigniew: 
+Unable to find image 'devopsdockeruh/simple-web-service:ubuntu' locally
+ubuntu: Pulling from devopsdockeruh/simple-web-service
+
+[1A[2K5d3b2c2d21bb: Pulling fs layer [1B
+[1A[2K3fc2062ea667: Pulling fs layer [1B
+[1A[2K75adf526d75b: Pulling fs layer [1B
+[1A[2K965d4bbb586a: Pulling fs layer [1B
+[1A[2K4f4fb700ef54: Pulling fs layer [1B[2A[2K965d4bbb586a: Waiting [2B[1A[2K4f4fb700ef54: Waiting [1B[3A[2K75adf526d75b: Downloading     162B/162B[3B[3A[2K75adf526d75b: Verifying Checksum [3B[3A[2K75adf526d75b: Download complete [3B[4A[2K3fc2062ea667: Downloading     759B/850B[4B[4A[2K3fc2062ea667: Downloading     850B/850B[4B[4A[2K3fc2062ea667: Verifying Checksum [4B[4A[2K3fc2062ea667: Download complete [4B[5A[2K5d3b2c2d21bb: Downloading  294.9kB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  1.765MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  3.239MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  4.705MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  6.179MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading   7.65MB/28.57MB[5B[1A[2K4f4fb700ef54: Downloading      32B/32B[1B[1A[2K4f4fb700ef54: Verifying Checksum [1B[1A[2K4f4fb700ef54: Download complete [1B[5A[2K5d3b2c2d21bb: Downloading  9.124MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  10.59MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  12.36MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading  51.22kB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading  13.83MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading  277.8kB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading  15.01MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading  736.6kB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading  16.19MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading  1.261MB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading  17.37MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading  1.916MB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading  18.25MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading  2.626MB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading  19.13MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading  3.335MB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading  20.02MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading  4.121MB/5.117MB[2B[5A[2K5d3b2c2d21bb: Downloading  20.61MB/28.57MB[5B[2A[2K965d4bbb586a: Downloading  5.039MB/5.117MB[2B[2A[2K965d4bbb586a: Download complete [2B[5A[2K5d3b2c2d21bb: Downloading  22.08MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  23.55MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  25.02MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  26.49MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Downloading  27.97MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Verifying Checksum [5B[5A[2K5d3b2c2d21bb: Download complete [5B[5A[2K5d3b2c2d21bb: Extracting  294.9kB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting  6.783MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting   11.5MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting  19.76MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting  24.18MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting  27.72MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Extracting  28.57MB/28.57MB[5B[5A[2K5d3b2c2d21bb: Pull complete [5B[4A[2K3fc2062ea667: Extracting     850B/850B[4B[4A[2K3fc2062ea667: Extracting     850B/850B[4B[4A[2K3fc2062ea667: Pull complete [4B[3A[2K75adf526d75b: Extracting     162B/162B[3B[3A[2K75adf526d75b: Extracting     162B/162B[3B[3A[2K75adf526d75b: Pull complete [3B[2A[2K965d4bbb586a: Extracting  65.54kB/5.117MB[2B[2A[2K965d4bbb586a: Extracting  327.7kB/5.117MB[2B[2A[2K965d4bbb586a: Extracting  5.117MB/5.117MB[2B[2A[2K965d4bbb586a: Pull complete [2B[1A[2K4f4fb700ef54: Extracting      32B/32B[1B[1A[2K4f4fb700ef54: Extracting      32B/32B[1B[1A[2K4f4fb700ef54: Pull complete [1BDigest: sha256:d44e1dce398732e18c7c2bad9416a072f719af33498302b02929d4c112e88d2a
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:ubuntu
+0745c2792ee960ff208c4032214de16812bef755f6f788fdb9e0d88a26d2e087
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ sudo s[Kdoske[K[K[Kcker exex -it simp[Kpe [K[Kle bash
+[?2004lunknown shorthand flag: 'i' in -it
+See 'docker --help'.
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.10.2)
+  buildx*     Docker Buildx (Docker Inc., v0.10.2)
+  compose*    Docker Compose (Docker Inc., v2.16.0)
+  compose*    Docker Compose (Docker Inc., v2.16.0)
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  scan*       Docker Scan (Docker Inc., v0.23.0)
+  scan*       Docker Scan (Docker Inc., v0.23.0)
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Global Options:
+      --config string      Location of client config files (default "/root/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides
+                           DOCKER_HOST env var and default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal")
+                           (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/root/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/root/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/root/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.com/go/guides/
+
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ sudo docker exex -it simple bash[C[1@x[C[C[1P[1P[1@c
+[?2004l]0;root@0745c2792ee9: /usr/src/approot@0745c2792ee9:/usr/src/app# tail -f / ./tes xt.log
+2023-03-27 09:09:36 +0000 UTC
+2023-03-27 09:09:38 +0000 UTC
+2023-03-27 09:09:40 +0000 UTC
+2023-03-27 09:09:42 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 09:09:44 +0000 UTC
+2023-03-27 09:09:46 +0000 UTC
+2023-03-27 09:09:48 +0000 UTC
+2023-03-27 09:09:50 +0000 UTC
+2023-03-27 09:09:52 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 09:09:54 +0000 UTC
+2023-03-27 09:09:56 +0000 UTC
+2023-03-27 09:09:58 +0000 UTC
+2023-03-27 09:10:00 +0000 UTC
+2023-03-27 09:10:02 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 09:10:04 +0000 UTC
+2023-03-27 09:10:06 +0000 UTC
+2023-03-27 09:10:08 +0000 UTC
+2023-03-27 09:10:10 +0000 UTC
+2023-03-27 09:10:12 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 09:10:14 +0000 UTC
+2023-03-27 09:10:16 +0000 UTC
+2023-03-27 09:10:18 +0000 UTC
+2023-03-27 09:10:20 +0000 UTC
+2023-03-27 09:10:22 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 09:10:24 +0000 UTC
+2023-03-27 09:10:26 +0000 UTC
+2023-03-27 09:10:28 +0000 UTC
+2023-03-27 09:10:30 +0000 UTC
+2023-03-27 09:10:32 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 09:10:34 +0000 UTC
+2023-03-27 09:10:36 +0000 UTC
+2023-03-27 09:10:38 +0000 UTC
+2023-03-27 09:10:40 +0000 UTC
+2023-03-27 09:10:42 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 09:10:44 +0000 UTC
+2023-03-27 09:10:46 +0000 UTC
+2023-03-27 09:10:48 +0000 UTC
+2023-03-27 09:10:50 +0000 UTC
+2023-03-27 09:10:52 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 09:10:54 +0000 UTC
+2023-03-27 09:10:56 +0000 UTC
+2023-03-27 09:10:58 +0000 UTC
+2023-03-27 09:11:00 +0000 UTC
+read escape sequence
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ exit
+[?2004lexit
+
+Script done on 2023-03-27 11:11:07+02:00 [COMMAND_EXIT_CODE="1"]

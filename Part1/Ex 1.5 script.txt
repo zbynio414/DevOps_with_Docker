@@ -1,0 +1,50 @@
+Script started on 2023-03-27 11:52:13+02:00 [TERM="xterm-256color" TTY="/dev/pts/13" COLUMNS="117" LINES="60"]
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ docker pull [7mdevopsdockeruh/simple-web-service:ubuntu.[27mdevopsdockeruh/simple-web-service:ubuntu.[K
+[?2004lpermission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/create?fromImage=devopsdockeruh%2Fsimple-web-service&tag=ubuntu": dial unix /var/run/docker.sock: connect: permission denied
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ docker pull devopsdockeruh/simple-web-service:ubuntu[1@s[1@u[C[1@d[1@o[1@ 
+[?2004l[sudo] password for zbigniew: 
+ubuntu: Pulling from devopsdockeruh/simple-web-service
+Digest: sha256:d44e1dce398732e18c7c2bad9416a072f719af33498302b02929d4c112e88d2a
+Status: Image is up to date for devopsdockeruh/simple-web-service:ubuntu
+docker.io/devopsdockeruh/simple-web-service:ubuntu
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ sudo docker pull devopsdockeruh/simple-web-service:ubuntu[K[K[K[K[K[Kalpine
+[?2004lalpine: Pulling from devopsdockeruh/simple-web-service
+
+[1A[2Kba3557a56b15: Pulling fs layer [1B
+[1A[2K1dace236434b: Pulling fs layer [1B
+[1A[2K4f4fb700ef54: Pulling fs layer [1B[3A[2Kba3557a56b15: Downloading [>                                                  ]  28.75kB/2.812MB[3B[3A[2Kba3557a56b15: Downloading [==========>                                        ]  613.7kB/2.812MB[3B[3A[2Kba3557a56b15: Downloading [=============================>                     ]  1.665MB/2.812MB[3B[3A[2Kba3557a56b15: Downloading [=============================================>     ]  2.546MB/2.812MB[3B[3A[2Kba3557a56b15: Verifying Checksum [3B[3A[2Kba3557a56b15: Download complete [3B[3A[2Kba3557a56b15: Extracting [>                                                  ]  32.77kB/2.812MB[3B[3A[2Kba3557a56b15: Extracting [=================================================> ]  2.785MB/2.812MB[3B[3A[2Kba3557a56b15: Extracting [==================================================>]  2.812MB/2.812MB[3B[3A[2Kba3557a56b15: Pull complete [3B[1A[2K4f4fb700ef54: Downloading [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Verifying Checksum [1B[1A[2K4f4fb700ef54: Download complete [1B[2A[2K1dace236434b: Downloading [>                                                  ]  51.93kB/5.117MB[2B[2A[2K1dace236434b: Downloading [=========>                                         ]  933.9kB/5.117MB[2B[2A[2K1dace236434b: Downloading [====================>                              ]  2.102MB/5.117MB[2B[2A[2K1dace236434b: Downloading [============================>                      ]  2.884MB/5.117MB[2B[2A[2K1dace236434b: Downloading [======================================>            ]  3.986MB/5.117MB[2B[2A[2K1dace236434b: Downloading [================================================>  ]  4.969MB/5.117MB[2B[2A[2K1dace236434b: Verifying Checksum [2B[2A[2K1dace236434b: Download complete [2B[2A[2K1dace236434b: Extracting [>                                                  ]  65.54kB/5.117MB[2B[2A[2K1dace236434b: Extracting [============================>                      ]  2.884MB/5.117MB[2B[2A[2K1dace236434b: Extracting [==================================================>]  5.117MB/5.117MB[2B[2A[2K1dace236434b: Pull complete [2B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Pull complete [1BDigest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+docker.io/devopsdockeruh/simple-web-service:alpine
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ sudo docke r[K[Kr images
+[?2004lREPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+ubuntu                              latest    08d22c0ceb15   2 weeks ago   77.8MB
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 years ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 years ago   15.7MB
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ sudo docker run -d -it --name alpine de[K[K[7mdevopsdockeruh/simple-web-s[27m[7me[27m[7mrvice[27m[A(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdevopsdockeruh/simple-web-service[C:alpine
+[?2004l[sudo] password for zbigniew: 
+510ef5eaac3018cb3b850ded381a6eedbc657d5d2e646eb651e8cd7464b6630d
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ sudo docker exec apline -c bash
+[?2004lError response from daemon: No such container: apline
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ sudo docker exec apline -c bash[C[C[1P[C[1@p
+[?2004lOCI runtime exec failed: exec failed: unable to start container process: exec: "-c": executable file not found in $PATH: unknown
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ sudo docker exec alpine -c bash[C[C[C[C[C[C[1@x[1P[1P bash[1P bash[1Pbash[1@-[1@i[1@t[1@ 
+[?2004lOCI runtime exec failed: exec failed: unable to start container process: exec: "bash": executable file not found in $PATH: unknown
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ sudo docker exec -it alpine bash[K[K[K[Ksh
+[?2004l/usr/src/app # [6n<tail -f ./text.logtail -f ./text.log[J[18Dtail -f ./text.log
+2023-03-27 10:39:41 +0000 UTC
+2023-03-27 10:39:43 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 10:39:45 +0000 UTC
+2023-03-27 10:39:47 +0000 UTC
+2023-03-27 10:39:49 +0000 UTC
+2023-03-27 10:39:51 +0000 UTC
+2023-03-27 10:39:53 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 10:39:55 +0000 UTC
+2023-03-27 10:39:57 +0000 UTC
+2023-03-27 10:39:59 +0000 UTC
+read escape sequence
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1[00m$ exit
+[?2004lexit
+
+Script done on 2023-03-27 12:40:29+02:00 [COMMAND_EXIT_CODE="1"]

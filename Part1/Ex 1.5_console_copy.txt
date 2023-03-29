@@ -1,0 +1,46 @@
+(base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ docker pull devopsdockeruh/simple-web-service:ubuntu
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/create?fromImage=devopsdockeruh%2Fsimple-web-service&tag=ubuntu": dial unix /var/run/docker.sock: connect: permission denied
+(base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ sudo docker pull devopsdockeruh/simple-web-service:ubuntu
+[sudo] password for zbigniew: 
+ubuntu: Pulling from devopsdockeruh/simple-web-service
+Digest: sha256:d44e1dce398732e18c7c2bad9416a072f719af33498302b02929d4c112e88d2a
+Status: Image is up to date for devopsdockeruh/simple-web-service:ubuntu
+docker.io/devopsdockeruh/simple-web-service:ubuntu
+(base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ sudo docker pull devopsdockeruh/simple-web-service:alpine
+alpine: Pulling from devopsdockeruh/simple-web-service
+ba3557a56b15: Pull complete 
+1dace236434b: Pull complete 
+4f4fb700ef54: Pull complete 
+Digest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+docker.io/devopsdockeruh/simple-web-service:alpine
+(base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ sudo docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+ubuntu                              latest    08d22c0ceb15   2 weeks ago   77.8MB
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 years ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 years ago   15.7MB
+(base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ sudo docker run -d -it --name alpine devopsdockeruh/simple-web-service:alpine
+[sudo] password for zbigniew: 
+510ef5eaac3018cb3b850ded381a6eedbc657d5d2e646eb651e8cd7464b6630d
+(base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ sudo docker exec apline -c bash
+Error response from daemon: No such container: apline
+(base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ sudo docker exec alpine -c bash
+OCI runtime exec failed: exec failed: unable to start container process: exec: "-c": executable file not found in $PATH: unknown
+(base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ sudo docker exec -it alpine bash
+OCI runtime exec failed: exec failed: unable to start container process: exec: "bash": executable file not found in $PATH: unknown
+(base) zbigniew@zbigniew:~/DevOps_with_Docker/Part1$ sudo docker exec -it alpine sh
+/usr/src/app # tail -f ./text.log
+2023-03-27 10:39:41 +0000 UTC
+2023-03-27 10:39:43 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 10:39:45 +0000 UTC
+2023-03-27 10:39:47 +0000 UTC
+2023-03-27 10:39:49 +0000 UTC
+2023-03-27 10:39:51 +0000 UTC
+2023-03-27 10:39:53 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-27 10:39:55 +0000 UTC
+2023-03-27 10:39:57 +0000 UTC
+2023-03-27 10:39:59 +0000 UTC
+read escape sequence
+
