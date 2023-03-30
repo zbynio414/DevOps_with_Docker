@@ -1,0 +1,24 @@
+Script started on 2023-03-30 15:51:28+02:00 [TERM="xterm-256color" TTY="/dev/pts/14" COLUMNS="148" LINES="65"]
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1/Ex 1.10[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1/Ex 1.10[00m$ docker run -p 127,0,0[K(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1/Ex 1.10[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1/Ex 1.10[00m$ docker run -p 127,0,0[K(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1/Ex 1.10[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1/Ex 1.10[00m$ docker run -p 127,0,0[K(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1/Ex 1.10[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1/Ex 1.10[00m$ docker run -p 127,0,0[K[K[K[K.0.0.1:808-[K0:8080 web-service
+[?2004lUnable to find image 'web-service:latest' locally
+^[[A    docker: Error response from daemon: pull access denied for web-service, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.
+[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1/Ex 1.10[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1/Ex 1.10[00m$ docker run -p 127.0.0.1:8080:8080 web-service[K[K[K[Kver
+[?2004l[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2023/03/30 - 13:53:16 | 200 |      49.942µs |      172.17.0.1 | GET      "/"
+[GIN] 2023/03/30 - 13:53:16 | 200 |      28.771µs |      172.17.0.1 | GET      "/favicon.ico"
+[GIN] 2023/03/30 - 13:53:52 | 200 |      17.749µs |      172.17.0.1 | GET      "/"
+[GIN] 2023/03/30 - 13:53:53 | 200 |      37.115µs |      172.17.0.1 | GET      "/favicon.ico"
+[GIN] 2023/03/30 - 13:53:54 | 200 |      38.498µs |      172.17.0.1 | GET      "/"
+[GIN] 2023/03/30 - 13:53:54 | 200 |      18.971µs |      172.17.0.1 | GET      "/favicon.ico"
+^C[?2004h(base) ]0;zbigniew@zbigniew: ~/DevOps_with_Docker/Part1/Ex 1.10[01;32mzbigniew@zbigniew[00m:[01;34m~/DevOps_with_Docker/Part1/Ex 1.10[00m$ exit
+[?2004lexit
+
+Script done on 2023-03-30 15:54:02+02:00 [COMMAND_EXIT_CODE="2"]
