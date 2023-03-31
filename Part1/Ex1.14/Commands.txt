@@ -1,0 +1,11 @@
+Frontend
+
+docker build . -t example-frontend:1.14
+
+docker run -p 5000:5000 example-frontend:1.14
+
+Backend
+
+docker build . -t example-backend:1.14
+
+docker run -p 8000:8000 example-backend:1.14
