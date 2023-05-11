@@ -1,0 +1,15 @@
+(base) zbigniew@zbigniew:~/DevOps_with_Docker/Part2/Ex2.1$ docker compose up
+[+] Running 1/0
+ ✔ Container simple-web-service  Recreated                                                                                             0.0s 
+Attaching to simple-web-service
+simple-web-service  | Starting log output
+simple-web-service  | Wrote text to /usr/src/app/text.log
+simple-web-service  | Wrote text to /usr/src/app/text.log
+simple-web-service  | Wrote text to /usr/src/app/text.log
+simple-web-service  | Wrote text to /usr/src/app/text.log
+simple-web-service  | Wrote text to /usr/src/app/text.log
+^CGracefully stopping... (press Ctrl+C again to force)
+Aborting on container exit...
+[+] Running 1/1
+ ✔ Container simple-web-service  Stopped                                                                                               0.2s 
+canceled
