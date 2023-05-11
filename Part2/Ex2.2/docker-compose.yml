@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+
+  simple-web-service-2:
+    image: devopsdockeruh/simple-web-service
+    build: .
+    # volumes:
+      # - ./text.log:/usr/src/app/text.log  
+    container_name: simple-web-service-2
+    command: server
+    environment:
+      - GIN_MODE=release
+    ports:
+      - 8080:8080

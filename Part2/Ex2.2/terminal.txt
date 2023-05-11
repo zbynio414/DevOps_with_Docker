@@ -1,0 +1,8 @@
+(base) zbigniew@zbigniew:~/DevOps_with_Docker/Part2/Ex2.2$ docker compose up
+[+] Running 1/0
+ ✔ Container simple-web-service-2  Recreated                                                                                         0.0s 
+Attaching to simple-web-service-2
+simple-web-service-2  | [GIN] 2023/05/11 - 13:51:36 | 200 |     153.246µs |      172.19.0.1 | GET      "/"
+simple-web-service-2  | [GIN] 2023/05/11 - 13:51:36 | 200 |      64.183µs |      172.19.0.1 | GET      "/favicon.ico"
+simple-web-service-2  | [GIN] 2023/05/11 - 13:53:01 | 200 |      22.866µs |      172.19.0.1 | GET      "/"
+simple-web-service-2  | [GIN] 2023/05/11 - 13:53:01 | 200 |      36.113µs |      172.19.0.1 | GET      "/favicon.ico"
