@@ -1,0 +1,10 @@
+flyctl launch
+
+# app name:  devopsdockeruh-coursepage
+
+#add line to fly.toml 
+
+#[build]
+#  image = "devopsdockeruh/coursepage"
+
+fly deploy
